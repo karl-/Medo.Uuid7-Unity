@@ -5,7 +5,7 @@ Create a new Uuid7 like a `System.Guid`: `Uuid7.Create()`
 Import to your project by cloning this repo into `Project/Packages`
 
 ```sh
-`git clone https://github.com/karl-/Medo.Uuid7-Unity.git com.medo.uuid7`
+git clone https://github.com/karl-/Medo.Uuid7-Unity.git com.medo.uuid7
 ```
 
 Add it in the Package Manager UI
