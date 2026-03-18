@@ -10,6 +10,8 @@ Import to your project by cloning this repo into `Project/Packages`
 
 Add it in the Package Manager UI
 
+<img width="189" height="150" alt="image" src="https://github.com/user-attachments/assets/aa06d042-5dfb-499b-82d4-9a3570bb21e0" />
+
 Or edit your manifest directly
 
 ```json
