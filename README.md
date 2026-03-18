@@ -2,9 +2,26 @@ Fork info: This is a trimmed down clone of Medo.Uuid7 that has been organized as
 
 Create a new Uuid7 like a `System.Guid`: `Uuid7.Create()`
 
+Import to your project by cloning this repo into `Project/Packages`
+
+```sh
+`git clone https://github.com/karl-/Medo.Uuid7-Unity.git com.medo.uuid7`
+```
+
+Add it in the Package Manager UI
+
+Or edit your manifest directly
+
+```json
+{
+  "dependencies": {
+    "com.medo.uuid7": "https://github.com/karl-/Medo.Uuid7-Unity.git"
+    ...
+  }
+}
+```
 
 ---
-
 
 Medo.Uuid7
 ==========
