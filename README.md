@@ -1,6 +1,6 @@
 Fork info: This is a trimmed down clone of Medo.Uuid7 that has been organized as a package and slightly tweaked to compile in the outdated Unity C# runtime.
 
-Create a new Uuid7 like a `System.Guid`: `Uuid7.Create()`
+Create a new Uuid7 like a `System.Guid`: `Uuid7.NewUuid7()`
 
 Import to your project by cloning this repo into `Project/Packages`
 
