@@ -18,3 +18,4 @@ research/
 TODO.md
 .meta.*
 .nuget.key
+.DS_Store
