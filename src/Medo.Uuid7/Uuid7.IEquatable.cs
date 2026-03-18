@@ -1,7 +1,5 @@
 /* Josip Medved <jmedved@jmedved.com> * www.medo64.com * MIT License */
 
-namespace Medo;
-
 using System;
 using System.Runtime.CompilerServices;
 
@@ -9,16 +7,16 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics;
 #endif
 
-public readonly partial struct Uuid7 : IEquatable<Guid>, IEquatable<Uuid7> {
+namespace Medo {
+    public readonly partial struct Uuid7 : IEquatable<Guid>, IEquatable<Uuid7> {
 
-    #region IEquatable<Guid>
+        #region IEquatable<Guid>
 
-    /// <summary>
-    /// Returns a value that indicates whether this instance is equal to a specified object.
-    /// </summary>
-    /// <param name="other">An object to compare to this instance.</param>
-    public bool Equals(Guid other)
-    {
+        /// <summary>
+        /// Returns a value that indicates whether this instance is equal to a specified object.
+        /// </summary>
+        /// <param name="other">An object to compare to this instance.</param>
+        public bool Equals(Guid other) {
 #if NET7_0_OR_GREATER
         if (Vector128.IsHardwareAccelerated) {
             var vector1 = (Bytes != null)
@@ -28,20 +26,19 @@ public readonly partial struct Uuid7 : IEquatable<Guid>, IEquatable<Uuid7> {
             return vector1 == vector2;
         }
 #endif
-        return CompareArrays(Bytes, other.ToByteArray()) == 0;
-    }
+            return CompareArrays(Bytes, other.ToByteArray()) == 0;
+        }
 
-    #endregion IEquatable<Guid>
+        #endregion IEquatable<Guid>
 
 
-    #region IEquatable<Uuid>
+        #region IEquatable<Uuid>
 
-    /// <summary>
-    /// Returns a value that indicates whether this instance is equal to a specified object.
-    /// </summary>
-    /// <param name="other">An object to compare to this instance.</param>
-    public bool Equals(Uuid7 other)
-    {
+        /// <summary>
+        /// Returns a value that indicates whether this instance is equal to a specified object.
+        /// </summary>
+        /// <param name="other">An object to compare to this instance.</param>
+        public bool Equals(Uuid7 other) {
 #if NET7_0_OR_GREATER
         if (Vector128.IsHardwareAccelerated) {
             var vector1 = (Bytes != null)
@@ -55,9 +52,10 @@ public readonly partial struct Uuid7 : IEquatable<Guid>, IEquatable<Uuid7> {
             }
         }
 #endif
-        return CompareArrays(Bytes, other.Bytes) == 0;
+            return CompareArrays(Bytes, other.Bytes) == 0;
+        }
+
+        #endregion IEquatable<Uuid>
+
     }
-
-    #endregion IEquatable<Uuid>
-
 }

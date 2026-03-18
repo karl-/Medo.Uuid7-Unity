@@ -1,14 +1,12 @@
 /* Josip Medved <jmedved@jmedved.com> * www.medo64.com * MIT License */
 
-namespace Medo;
-
 #if NET6_0_OR_GREATER
 
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-public readonly partial struct Uuid7 : ISpanFormattable {
-
+namespace Medo {
+    public readonly partial struct Uuid7 : ISpanFormattable {
 #if NET7_0_OR_GREATER
     /// <summary>
     /// Tries to format the current instance into the provided character span.
@@ -36,7 +34,6 @@ public readonly partial struct Uuid7 : ISpanFormattable {
     }
 
 #elif NET6_0_OR_GREATER
-
     /// <summary>
     /// Tries to format the current instance into the provided character span.
     /// </summary>
@@ -63,7 +60,7 @@ public readonly partial struct Uuid7 : ISpanFormattable {
     }
 
 #endif
+    }
 
 }
-
 #endif

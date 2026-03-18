@@ -1,0 +1,9 @@
+{
+    "name": "com.medo.uuid7",
+    "version": "1.0.0",
+    "displayName": "Medo Uuid7",
+    "description": "Uuid v7 Implementation.",
+    "unity": "6000.3",
+    "private": true,
+    "dependencies": {}
+}
